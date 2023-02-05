@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">OnBoardingUiGiant</string>
+    <string name="skip">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="start_btn">Start</string>
+    <string name="slider_indicator">slider indicator</string>
+    <string name="content_image_description">content image description</string>
+    <string name="content_background_description">content background description</string>
+    <string name="slider_finish_message">You have been reached of the slider</string>
+
+    <array name="background_slide">
+        <item>@drawable/first_background</item>
+        <item>@drawable/second_background</item>
+        <item>@drawable/second_background</item>
+    </array>
+
+    <array name="image_slide">
+        <item>@drawable/first_image</item>
+        <item>@drawable/second_image</item>
+        <item>@drawable/three_image</item>
+    </array>
+
+    <string-array name="title_slide">
+        <item>The huge base of users</item>
+        <item>Choose a preferable browsing mode</item>
+        <item>See who liked you</item>
+    </string-array>
+</resources>
