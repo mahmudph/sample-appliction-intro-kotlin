@@ -15,28 +15,18 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/content_image_description"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/first_image" />
 
         <RelativeLayout
-            android:id="@+id/relativeLayout"
+            android:id="@+id/bottom_content"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginTop="48dp"
-
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <ImageView
-                android:id="@+id/slider_background_item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:contentDescription="@string/content_background_description"
-                android:scaleType="centerCrop"
-                tools:src="@drawable/second_background" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:background="@drawable/first_background">
 
             <TextView
                 android:id="@+id/slider_title_item"

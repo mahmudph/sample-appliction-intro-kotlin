@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import id.myone.onboardinguigiant.databinding.OnboardingPageItemBinding
 
@@ -35,7 +36,7 @@ class BoardingFragment : Fragment() {
         with(binding) {
             sliderTitleItem.text = onBoardingData.title
             sliderImageItem.setImageResource(onBoardingData.image)
-            sliderBackgroundItem.setImageResource(onBoardingData.background)
+            bottomContent.background = ResourcesCompat.getDrawable(resources, onBoardingData.background, null)
         }
     }
 
